@@ -1,0 +1,103 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	animation: goBg 10s linear infinite;
+	-moz-animation: goBg 10s linear infinite;
+	-webkit-animation: goBg 10s linear infinite;
+	-o-animation: goBg 10s linear infinite;
+	background: #77ca32 url(../images/bg.jpg) repeat-x 0 0;
+	height: 100%;
+}
+
+#container{
+	margin: 270px auto;
+	width: 1000px;
+	overflow: hidden;
+}
+
+#car-body{
+	background: url(../images/car_body.png)no-repeat;
+	width: 600px;
+	height: 217px;
+	margin: auto;
+}
+
+#wheel-front{
+	background: url(../images/car_wheel.png)no-repeat;
+	float: left;
+	width: 75px;
+	height: 79px;
+	margin-left: 221px;
+	margin-top: -134px;
+	animation: goWheel 5s linear 0s infinite;
+	-moz-animation: goWheel 5s linear 0s infinite;
+	-webkit-animation: goWheel 5s linear 0s infinite;
+	-o-animation: goWheel 5s linear 0s infinite;
+	-ms-animation: goWheel 5s linear 0s infinite;
+}
+
+#wheel-back{
+	background: url(../images/car_wheel.png)no-repeat;
+	float: left;
+	width: 75px;
+	height: 79px;
+	margin-left: 526px;
+	margin-top: -130px;
+	animation: goWheel 5s linear 0s infinite;
+	-moz-animation: goWheel 5s linear 0s infinite;
+	-webkit-animation: goWheel 5s linear 0s infinite;
+	-o-animation: goWheel 5s linear 0s infinite;
+}
+
+
+/*WHEEL ANIMATION*/
+@keyframes goWheel{
+	0%{transform: rotate(0deg);}
+	100%{transform: rotate(-360deg);}
+}
+
+@-moz-keyframes goWheel{
+	0%{transform: rotate(0deg);}
+	100%{transform: rotate(-360deg);}
+}
+
+@-webkit-keyframes goWheel{
+	0%{transform: rotate(0deg);}
+	100%{transform: rotate(-360deg);}
+}
+
+@-o-keyframes goWheel{
+	0%{transform: rotate(0deg);}
+	100%{transform: rotate(-360deg);}
+}
+
+/*BG ANIMATION*/
+@keyframes goBg{
+	0%{background-position: 0px 0px;}
+	100%{background-position: 1000px 0px;}
+}
+
+@-moz-keyframes goBg{
+	0%{background-position: 0px 0px;}
+	100%{background-position: 1000px 0px;}
+}
+
+@-webkit-keyframes goBg{
+	0%{background-position: 0px 0px;}
+	100%{background-position: 1000px 0px;}
+}
+
+@-o-keyframes goBg{
+	0%{background-position: 0px 0px;}
+	100%{background-position: 1000px 0px;}
+}
+
+.pause{
+	animation-play-state: paused !important;
+	-moz-animation-play-state: paused !important;
+	-webkit-animation-play-state: paused !important;
+	-o-animation-play-state: paused !important;
+}
